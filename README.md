@@ -23,3 +23,11 @@ This is version 1 of my Django Project Cheepees.
 14. in urls.py add the following line to the urlpatterns section - url(r'^$', get_allCheepees)
 15. Open the settings.py file and add the appname to the end of the installed apps list e.g cheepeeApp
 16. Test that the page is working by stopping the server (CTRL C) and starting it again with the run command. 
+
+17. bash - python3 manage.py migrate - this wil run the python setup migrations
+18. Go into sqlite3 by pressing (CTRL C) followed by - sqlite3 db.sqlite3 - then check tables exist by typing .tables, then type .quit to exit.
+19. Create super user - bash - python3 manage.py createsuperuser - then fill in your details.
+20. Test that the admin pages are working correctly by going to the base url and adding /admin to the end. Try and sign in. 
+21. Click on the Cog and check "Show home in favourites" and "Show Hidden Files"
+22. Create a new file in the root (~) folder called .sqliterc
+
