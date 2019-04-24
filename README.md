@@ -11,4 +11,15 @@ This is version 1 of my Django Project Cheepees.
 7. Open the .bash-aliases file and add the following at the bottom... alias run="python3 ~/workspace/manage.py runserver $IP:$C9_PORT"
 8. Type Exit on the bash terminal, then open a new one and type the command 'run' - then check the URL is still working. 
 
-9. 
+9. bash - django-admin startapp cheepeeApp - check that the folder and files have been created.
+10. Add new folder under the app folder by rightclicking, call it folder. 
+11. Create a html file within this - in this instance I created allCheepees.html - check it has been created.
+12. Open urls.py and add a function:
+ 
+                                        def get_allCheepees(request):
+                                            return render(request, "allCheepees.html")
+
+13. Open urls.py and add the following line to the import section - from cheepeeApp.views import get_allCheepees.html
+14. in urls.py add the following line to the urlpatterns section - url(r'^$', get_allCheepees)
+15. Open the settings.py file and add the appname to the end of the installed apps list e.g cheepeeApp
+16. Test that the page is working by stopping the server (CTRL C) and starting it again with the run command. 
