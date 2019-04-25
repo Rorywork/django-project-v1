@@ -1,16 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>xxxxxxz</h1>
 
-<p>this is the content</p>
 
- {% for cheepee in cheepees %}
-        <p>{{ cheepee.productName }}bbbb</p>
-        
+{% for cheepee in cheepees %}
+    <div class="card">
+      <img class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{ cheepee.productName }}</h5>
+        <p class="card-text">{{ cheepee.productPrice }}</p>
+        <img src="{{ cheepee.productImageUrl }}" alt="Product Image" height="42" width="42">
+        <a href="#" class="btn btn-primary">See Cheapie</a>
+      </div>
+    </div>            
+    
     {% empty %}
             <p>There are no cheepees</p>
- {% endfor %}
- 
+
+{% endfor %}
+
  {% endblock content %}
-            

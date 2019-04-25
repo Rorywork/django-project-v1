@@ -42,3 +42,4 @@ This is version 1 of my Django Project Cheepees.
 STATICFILES_DIRS = [
 	"/django-project-v1/cheepeeApp/static",
 ]
+
