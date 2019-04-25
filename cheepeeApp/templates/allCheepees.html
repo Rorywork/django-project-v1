@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>xxxxxxz</h1>
+
+<p>this is the content</p>
+
+ {% for cheepee in cheepees %}
+        <p>{{ cheepee.productName }}bbbb</p>
+        
+    {% empty %}
+            <p>There are no cheepees</p>
+ {% endfor %}
+ 
+ {% endblock content %}
+            

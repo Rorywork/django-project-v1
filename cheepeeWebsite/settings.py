@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'cheepeeApp',
 ]
 
+STATICFILES_DIRS = [
+	"/django-project-v1/cheepeeApp/static",
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

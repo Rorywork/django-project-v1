@@ -31,3 +31,14 @@ This is version 1 of my Django Project Cheepees.
 21. Click on the Cog and check "Show home in favourites" and "Show Hidden Files"
 22. Create a new file in the root (~) folder called .sqliterc
 
+
+
+
+
+
+
+..... Create the static folder with another subfolder called css
+..... Add the following code to the settings.py file 
+STATICFILES_DIRS = [
+	"/django-project-v1/cheepeeApp/static",
+]
